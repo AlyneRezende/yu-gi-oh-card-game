@@ -1,3 +1,14 @@
+body {
+    cursor: url("../assets/cursor/yugicursor.png"), default;
+}
+
+button,
+button:hover,
+img:hover {
+    cursor: url("../assets/cursor/yamiyugicursorGLOW.png"), auto;
+}
+
+
 .bg-video {
     position: absolute;
     z-index: -2;
@@ -35,6 +46,7 @@
 .container__left {
     width: 35%;
     min-width: 300px;
+    display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
@@ -86,7 +98,6 @@
     flex-direction: column;
     padding-top: 1.5rem;
     height: 300px;
-    /*margin-top: 5rem;*/
 }
 
 .versus-top,
@@ -105,7 +116,7 @@
 }
 
 .card-box {
-    height: 9rem;
+    height: 10rem;
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -114,7 +125,16 @@
 }
 
 .card-infield {
-    height: 11.2rem;
+    height: 11.5rem;
     width: 8rem;
-    
+    border: 2px solid #ffffff;
+    border-radius: 8px;
+}
+
+.card {
+    transition: .2s;
+}
+
+.card:hover {
+    transform: scale(1.2);
 }
